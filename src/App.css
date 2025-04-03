@@ -98,3 +98,18 @@ main ul li p:last-child {
    color: #777;
    font-style: italic;
 }
+
+::backdrop {
+   background-color: black;
+   opacity: 0.75;
+}
+
+dialog {
+   position: absolute;
+   width: 600px;
+   height: 400px;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   border: 1px solid black;
+}

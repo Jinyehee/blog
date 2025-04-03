@@ -71,6 +71,9 @@ function App() {
                )}
             </div>
          </main>
+         <dialog open>
+            <p>Greetings, one and all!</p>
+         </dialog>
       </div>
    );
 }
