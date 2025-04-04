@@ -5,3 +5,11 @@
    list-style: none;
    user-select: none;
 }
+body {
+   background-color: #f4f4f4;
+}
+
+.error_p {
+   text-align: center;
+   margin-top: 50px;
+}

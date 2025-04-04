@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 const ModalStyle = styled.dialog`
    width: 600px;
-   height: 400px;
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
@@ -14,6 +13,7 @@ const ModalStyle = styled.dialog`
    justify-content: space-around;
    padding: 30px;
    border-radius: 20px;
+   gap: 50px;
 
    &::backdrop {
       background-color: rgba(0, 0, 0, 0.8);
@@ -31,6 +31,11 @@ const ModalStyle = styled.dialog`
       background-color: #151858;
       color: white;
       border-radius: 5px;
+      float: right;
+      right: 0;
+      bottom: 0;
+      position: absolute;
+      margin: 20px;
    }
 `;
 

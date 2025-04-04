@@ -37,11 +37,15 @@ const HeaderStyle = styled.header`
 export default function Header({ setSearchId, userdata }) {
    const inputRef = useRef(null);
    const searchClick = () => {
-      const userId = userdata.find(
-         (item) => item.name === inputRef.current.value
-      );
-      if (userId) {
-         setSearchId(userId.id);
+      if (inputRef.current.value) {
+         const userId = userdata.find(
+            (item) => item.name === inputRef.current.value
+         );
+         if (userId) {
+            setSearchId(userId.id);
+         } else {
+            setSearchId(0);
+         }
       } else {
          setSearchId(null);
       }
