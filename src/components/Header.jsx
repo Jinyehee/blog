@@ -42,6 +42,8 @@ export default function Header({ setSearchId, userdata }) {
       );
       if (userId) {
          setSearchId(userId.id);
+      } else {
+         setSearchId(null);
       }
    };
    return (
